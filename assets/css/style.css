@@ -1,4 +1,6 @@
 #forecastTitle {
+    font-size: 20px;
+    font-weight: bold;
     bottom: 200px;
     position: relative;
     left: 45px;
@@ -10,6 +12,8 @@ html {
     background-image: linear-gradient(rgb(246, 248, 235), rgb(112, 39, 202));
 }
 #day1 {
+    font-size: 15px;
+    font-weight: bold;
     position: relative;
     display: flex;
     left: 60px;
@@ -39,6 +43,8 @@ html {
 }
 
 #cityInfo {
+    font-size: 16px;
+    font-weight: bold;
     position: relative;
     top: 30px;
     left: 20px;
@@ -59,7 +65,9 @@ html {
 h1 {
     right: 10px;
     position: relative;
-    height: 50px;
+    font-size: 50px;
+    text-shadow: 0 0 3px #040000, 0 0 5px #020204;
+    height: 70px;
     margin-top: -8px;
     width: 1300px;
     background-image: linear-gradient(rgb(112, 39, 202), rgb(246, 248, 235));
@@ -112,13 +120,16 @@ button:active {
     box-shadow: 0 0 0 3px #01200a;
 }
 #D1 {
-   
+    font-size: 15px;
+    font-weight: bold;
     width: 180px;
     background-image: linear-gradient(rgb(234, 238, 244), #e79379);
     border: solid;
 }
 
 #D2 {
+    font-size: 15px;
+    font-weight: bold;
     color: beige;
     width: 180px;
     background: linear-gradient(#741c01, #e79379);
@@ -126,13 +137,16 @@ button:active {
 }
 
 #D3 {
-  
-    width: 180px;
+    font-size: 15px;
+    font-weight: bold;
+     width: 180px;
     background: linear-gradient(rgb(234, 238, 244), #e79379);
     border: solid;
 }
 
 #D4 {
+    font-size: 15px;
+    font-weight: bold;
     color: beige;
     width: 180px;
     background: linear-gradient(#741c01, #e79379);
@@ -140,7 +154,8 @@ button:active {
 }
 
 #D5 {
-    
+    font-size: 15px;
+    font-weight: bold;
     width: 180px;
     background: linear-gradient(rgb(234, 238, 244), #e79379);
     border: solid;
