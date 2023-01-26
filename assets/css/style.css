@@ -1,0 +1,42 @@
+#day1 {
+
+}
+
+#cityInfo {
+
+}
+
+h1 {
+
+}
+
+#search {
+
+}
+
+#D1 {
+
+}
+
+#D2 {
+
+}
+
+#D3 {
+
+}
+
+#D4 {
+
+}
+
+#D5 {
+
+}
+
+#forecasts {
+    display: flex;
+    justify-content: space-around;
+   
+    margin-top: 100px;
+}

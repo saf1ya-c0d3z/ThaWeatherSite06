@@ -79,15 +79,42 @@ function getForecastByLatLon(lat, lon) {
         })
         .then(data => {
             console.log(data)
-            var tempEl = $("#temp").text(data.list[0].main.temp)
-            var windEl = $("#wind").text(data.list[0].wind.speed)
-            var humidityEl = $("#humidity").text(data.list[0].main.humidity)
-            var dayOne = $("#day1").text(data.list[1].dt_txt)
+        $("#temp").text(data.list[0].main.temp)
+        $("#wind").text(data.list[0].wind.speed)
+        $("#humidity").text(data.list[0].main.humidity)
+
+        $("#d1Date").text()
+        $("#d1Temp").text()
+        $("#d1Wind").text()
+        $("#d1Humidity").text()
+
+        $("#d2Date").text()
+        $("#d2Temp").text()
+        $("#d2Wind").text()
+        $("#d2Humidity").text()
+
+        $("#d3Date").text()
+        $("#d3Temp").text()
+        $("#d3Wind").text()
+        $("#d3Humidity").text()
+
+        $("#d4Date").text()
+        $("#d4Temp").text()
+        $("#d4Wind").text()
+        $("#d4Humidity").text()
+
+        $("#d5Date").text()
+        $("#d5Temp").text()
+        $("#d5Wind").text()
+        $("#d5Humidity").text()
+            // var dayOne = $("#day1").text(data.list[1].dt_txt) //
             console.log(data.list[1].dt_txt)
+
+
         });
 }
 
-
+$("#day1").text(dayjs().format("MM-DD-YYYY"))
 
 $("#city-search").on("submit", weatherLookup)
 
