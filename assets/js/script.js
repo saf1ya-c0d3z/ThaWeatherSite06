@@ -17,11 +17,11 @@ function weatherLookup(event) {
             return response.json();
         })
         .then(data => {
-            
+
             var cityObj = data[0]
             var lat = cityObj.lat
             var lon = cityObj.lon
-            
+
             var cityArray = JSON.parse(localStorage.getItem("cities")) || [];
             var search = {
                 city,
@@ -36,7 +36,7 @@ function weatherLookup(event) {
             data.forEach(function (item) {
 
                 $("#cityBtn").append($("<button>").text(city).on("click", function () {
-                   
+
 
                     city = $(this).text();
                     fetch('http://api.openweathermap.org/geo/1.0/direct?q=' + city + '&appid=11642b92b61139b28b1837e159d93e17')
@@ -44,11 +44,11 @@ function weatherLookup(event) {
                             return response.json();
                         })
                         .then(data => {
-                           
+
                             var cityObj = data[0]
                             var lat = cityObj.lat
                             var lon = cityObj.lon
-                           
+
                             var cityArray = JSON.parse(localStorage.getItem("cities")) || [];
                             var search = {
                                 city,
@@ -79,34 +79,36 @@ function getForecastByLatLon(lat, lon) {
         })
         .then(data => {
             console.log(data)
-        $("#temp").text(data.list[0].main.temp)
-        $("#wind").text(data.list[0].wind.speed)
-        $("#humidity").text(data.list[0].main.humidity)
 
-        $("#d1Date").text()
-        $("#d1Temp").text()
-        $("#d1Wind").text()
-        $("#d1Humidity").text()
+            $("#temp").text(data.list[0].main.temp)
+            $("#wind").text(data.list[0].wind.speed)
+            $("#humidity").text(data.list[0].main.humidity)
 
-        $("#d2Date").text()
-        $("#d2Temp").text()
-        $("#d2Wind").text()
-        $("#d2Humidity").text()
+            $("#d1Date").text(data.list[2].dt_txt)
+            $("#d1Temp").text(data.list[2].main.temp)
+            $("#d1Wind").text(data.list[2].wind.speed)
+            $("#d1Humidity").text(data.list[2].main.humidity)
 
-        $("#d3Date").text()
-        $("#d3Temp").text()
-        $("#d3Wind").text()
-        $("#d3Humidity").text()
+            $("#d2Date").text(data.list[9].dt_txt)
+            $("#d2Temp").text(data.list[9].main.temp)
+            $("#d2Wind").text(data.list[9].wind.speed)
+            $("#d2Humidity").text(data.list[9].main.humidity)
 
-        $("#d4Date").text()
-        $("#d4Temp").text()
-        $("#d4Wind").text()
-        $("#d4Humidity").text()
+            $("#d3Date").text(data.list[16].dt_txt)
+            $("#d3Temp").text(data.list[16].main.temp)
+            $("#d3Wind").text(data.list[16].wind.speed)
+            $("#d3Humidity").text(data.list[16].main.humidity)
 
-        $("#d5Date").text()
-        $("#d5Temp").text()
-        $("#d5Wind").text()
-        $("#d5Humidity").text()
+            $("#d4Date").text(data.list[25].dt_txt)
+            $("#d4Temp").text(data.list[25].main.temp)
+            $("#d4Wind").text(data.list[25].wind.speed)
+            $("#d4Humidity").text(data.list[25].main.humidity)
+
+            $("#d5Date").text(data.list[34].dt_txt)
+            $("#d5Temp").text(data.list[34].main.temp)
+            $("#d5Wind").text(data.list[34].wind.speed)
+            $("#d5Humidity").text(data.list[34].main.humidity)
+
             // var dayOne = $("#day1").text(data.list[1].dt_txt) //
             console.log(data.list[1].dt_txt)
 

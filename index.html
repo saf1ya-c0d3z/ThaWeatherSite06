@@ -1,81 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My Website</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
-  </head>
+</head>
 <nav>
-    <h1>Weather DashBoard</h1>
-
+    <h1>The Weather Generator</h1>
 </nav>
+<main>
+
 <form id="city-search">
-    <h2>Search for a City</h2>
+    <h2>Search for a City!</h2>
+
     <input type="text" id="name" name="Name">
     <button id="search">Search</button>
 </form>
 
-<span id="cityInfo">
-    <h3 id="city-name"></h3>  <!-- add dayjs date -->
-    <p id="temp"></p> <!-- add show/hide for when search button is clicked of title for each data -->
-    <p id="wind"></p>
-    <p id="humidity"></p>
-</span>
-    <section id="cityBtn">
-       
-    </section>
 
-
-<section>
-    <p id="day1"></p>
+<section id="cityBtn">
 
 </section>
-<div>
-    <p id="forecastTitle"> 5-Day Forecast</p>
-</div>
+
+<section id="standardInfo">
+    <p id="day1"></p>
+    <span id="cityInfo">
+        <h3 id="city-name">City Name here</h3> 
+       <p>Temperature:</p> <span id="temp"></span> <span> Degrees F</span>
+        <p>Wind Speed:</p><span id="wind"></span> <span>MPH</span>
+        <p>Humidity:</p><span id="humidity"></span> <span>%</span>
+    </span>
+
+</section>
+ <p id="forecastTitle"> 5-Day Forecast</p>
 <section id="forecasts">
     
-<span id="D1">
-    <p id="d1Date">date</p> <!-- dayjs date -->
-    <p id="d1Temp"> Temp </p>
-    <p id-="d1Wind"> Wind </p>
-    <p id="d1Humidity">Humidity </p>
-</span>
-<span id="D2">
-    <p id="d2Date">date</p> <!-- dayjs date -->
-    <p id="d2Temp"> Temp </p>
-    <p id-="d2Wind"> Wind </p>
-    <p id="d2Humidity">Humidity </p>
-</span>
-<span id="D3">
-    <p id-="d3Date">date</p> <!-- dayjs date -->
-    <p id-="d3Temp"> Temp </p>
-    <p id-="d3Wind"> Wind </p>
-    <p id="d3Humidity">Humidity </p>
-</span>
-<span id="D4">
-    <p id="d4Date" >date</p> <!-- dayjs date -->
-    <p id="d4Temp"> Temp </p>
-    <p id="d4Wind"> Wind </p>
-    <p id="d4Humidity">Humidity </p>
-</span>
-<span id="D5">
-    <p id ="d5Date">date</p> <!-- dayjs date -->
-    <p id ="d5Temp"> Temp </p>
-    <p id ="d5Wind"></p>> Wind </p>
-    <p id="d5Humidity">Humidity </p>
-</span>
+    <span id="D1">
+        <p class="labelText">Date: </p> <span id="d1Date"></span>
+        <p class="labelText">Temperature: </p> <span id="d1Temp"> </span> <span> Degrees F</span>
+        <p class="labelText">Wind Speed:</p> <span id="d1Wind"> </span> <span> MPH</span>
+        <p class="labelText">Humidity:</p><span id="d1Humidity"> </span> <span> %</span>
+    </span>
+    <span id="D2">
+        <p class="labelText">Date: </p> <span id="d2Date"></span>
+        <p class="labelText">Temperature: </p> <span id="d2Temp"></span> <span> Degrees F</span>
+        <p class="labelText">Wind Speed:</p> <span id="d2Wind"></span> <span> MPH</span>
+        <p class="labelText">Humidity:</p> <span id="d2Humidity"></span> <span> %</span>
+    </span>
+    <span id="D3">
+        <p class="labelText">Date: </p> <span id="d3Date"></span>
+        <p class="labelText">Temperature: </p> <span id="d3Temp"></span> <span> Degrees F</span>
+        <p class="labelText">Wind Speed:</p> <span id="d3Wind"></span> <span> MPH</span>
+        <p class="labelText">Humidity:</p> <span id="d3Humidity"></span> <span> % </span>
+    </span>
+    <span id="D4">
+        <p class="labelText">Date: </p> <span id="d4Date"></span>
+        <p class="labelText">Temperature: </p> <span id="d4Temp"></span> <span> Degrees F</span>
+        <p class="labelText">Wind Speed:</p> <span id="d4Wind"></span> <span> MPH</span>
+        <p class="labelText">Humidity:</p> <span id="d4Humidity"></span> <span> %</span>
+    </span>
+    <span id="D5">
+        <p class="labelText">Date: </p> <span id="d5Date"></span>
+        <p class="labelText">Temperature: </p> <span id="d5Temp"></span> <span> Degrees F</span>
+        <p class="labelText">Wind Speed:</p> <span id="d5Wind"></span> <span> MPH</span>
+        <p class="labelText">Humidity:</p> <span id="d5Humidity"></span> <span> %</span>
+    </span>
 
 </section>
-  <body>
-    <main>
-        <h1>Welcome to My Website</h1>  
-    </main>
+</main>
+<body>
+
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-	<script src="./assets/js/script.js"></script>
-  </body>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
 </html>

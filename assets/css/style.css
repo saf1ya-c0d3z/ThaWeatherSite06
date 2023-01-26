@@ -1,42 +1,159 @@
-#day1 {
+#forecastTitle {
+    bottom: 200px;
+    position: relative;
+    left: 45px;
+    margin-left: 260px;
+    margin-right: 850px;
+}
 
+html {
+    background-image: linear-gradient(rgb(246, 248, 235), rgb(112, 39, 202));
+}
+#day1 {
+    position: relative;
+    display: flex;
+    left: 60px;
+
+}
+
+#cityBtn {
+    display: inline-grid;
+    width: 250px;
+    position: relative;
+    margin-top: 30px;
+}
+
+#standardInfo{
+    bottom: 120px;
+    left: 100px;
+    display: flex;
+    margin-bottom: 100px;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin-left: 300px;
+    background-image: linear-gradient(rgb(234, 238, 244), #81e492);
+    height: 300px;
+    margin-right: 300px;
+    border: solid;
 }
 
 #cityInfo {
-
+    position: relative;
+    top: 30px;
+    left: 20px;
 }
 
-h1 {
+#city-name {
+    position: relative;
+    bottom: 35px;
+    left: 50px;
+}
 
+#name {
+    position: relative;
+    left: 50px;
+}
+
+
+h1 {
+    right: 10px;
+    position: relative;
+    height: 50px;
+    margin-top: -8px;
+    width: 1300px;
+    background-image: linear-gradient(rgb(112, 39, 202), rgb(246, 248, 235));
+    justify-content: center;
+    display: flex;
+    color: rgb(246, 248, 235);
+ 
+}
+
+h2 {
+    position: relative;
+    left: 40px;
+    color: #055312;
 }
 
 #search {
-
+    background-color: #81e492;
+    position: relative;
+    top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    left: 75px;
+    width: 100px;
+    justify-content: center;
 }
 
-#D1 {
+#search:hover {
+    color: bisque;
+    background-color:#055312;
+    transition: 0.7s;
+}
 
+button{
+    background-color: #e79379;
+}
+
+button:hover {
+    color: bisque;
+    background-color:#741c01;
+    transition: 0.7s;
+}
+button:active {
+    background-color: #ffbf00;
+}
+
+#search:focus {
+    outline-color: transparent;
+    outline-style:solid;
+    box-shadow: 0 0 0 3px #01200a;
+}
+#D1 {
+   
+    width: 180px;
+    background-image: linear-gradient(rgb(234, 238, 244), #e79379);
+    border: solid;
 }
 
 #D2 {
-
+    color: beige;
+    width: 180px;
+    background: linear-gradient(#741c01, #e79379);
+    border: solid;
 }
 
 #D3 {
-
+  
+    width: 180px;
+    background: linear-gradient(rgb(234, 238, 244), #e79379);
+    border: solid;
 }
 
 #D4 {
-
+    color: beige;
+    width: 180px;
+    background: linear-gradient(#741c01, #e79379);
+    border: solid;
 }
 
 #D5 {
-
+    
+    width: 180px;
+    background: linear-gradient(rgb(234, 238, 244), #e79379);
+    border: solid;
 }
 
 #forecasts {
+    position: relative;
+    bottom: 190px;
     display: flex;
     justify-content: space-around;
-   
-    margin-top: 100px;
+    margin-left: 300px;
+}
+
+.labelText {
+
 }
