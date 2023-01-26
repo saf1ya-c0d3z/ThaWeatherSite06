@@ -13,7 +13,7 @@ In this challenge, I used HTML, CSS and JavaScript, DAYJS and Jquery to create a
 
 ## Link
 
-https://saf1ya-c0d3z.github.io/color-coded-planner/
+https://saf1ya-c0d3z.github.io/ThaWeatherSite06/
 
 
 © 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
