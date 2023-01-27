@@ -1,14 +1,14 @@
 
 var apiKey = "11642b92b61139b28b1837e159d93e17"
 
-var geoUrl = "http://api.openweathermap.org/geo/1.0/direct?q={city name},{state code},{country code}&limit={limit}&appid={API key}"
+var geoUrl = "https://api.openweathermap.org/geo/1.0/direct?q={city name},{state code},{country code}&limit={limit}&appid={API key}"
 
 function weatherLookup(event) {
     event.preventDefault()
 
     var city = $("#name").val()
 
-    fetch('http://api.openweathermap.org/geo/1.0/direct?q=' + city + '&appid=11642b92b61139b28b1837e159d93e17')
+    fetch('https://api.openweathermap.org/geo/1.0/direct?q=' + city + '&appid=11642b92b61139b28b1837e159d93e17')
         .then(response => {
             return response.json();
         })
@@ -52,7 +52,7 @@ function displayCityBtns() {
 
 function getForecastByLatLon(lat, lon) {
 
-    fetch('http://api.openweathermap.org/data/2.5/forecast?lat=' + lat + '&lon=' + lon + '&appid=11642b92b61139b28b1837e159d93e17&units=imperial')
+    fetch('https://api.openweathermap.org/data/2.5/forecast?lat=' + lat + '&lon=' + lon + '&appid=11642b92b61139b28b1837e159d93e17&units=imperial')
         .then(response => {
             return response.json();
         })
