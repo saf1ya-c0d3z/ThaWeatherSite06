@@ -28,8 +28,6 @@ html {
     margin-top: 30px;
 }
 
-
-
 #standardInfo {
     bottom: 120px;
     left: 100px;
@@ -63,7 +61,6 @@ html {
     position: relative;
     left: 50px;
 }
-
 
 h1 {
     right: 10px;
@@ -173,4 +170,3 @@ button:active {
     justify-content: space-around;
     margin-left: 300px;
 }
-
