@@ -11,6 +11,7 @@
 html {
     background-image: linear-gradient(rgb(246, 248, 235), rgb(112, 39, 202));
 }
+
 #day1 {
     font-size: 15px;
     font-weight: bold;
@@ -27,7 +28,7 @@ html {
     margin-top: 30px;
 }
 
-#standardInfo{
+#standardInfo {
     bottom: 120px;
     left: 100px;
     display: flex;
@@ -74,7 +75,7 @@ h1 {
     justify-content: center;
     display: flex;
     color: rgb(246, 248, 235);
- 
+
 }
 
 h2 {
@@ -97,28 +98,30 @@ h2 {
 
 #search:hover {
     color: bisque;
-    background-color:#055312;
+    background-color: #055312;
     transition: 0.7s;
 }
 
-button{
+button {
     background-color: #e79379;
 }
 
 button:hover {
     color: bisque;
-    background-color:#741c01;
+    background-color: #741c01;
     transition: 0.7s;
 }
+
 button:active {
     background-color: #ffbf00;
 }
 
 #search:focus {
     outline-color: transparent;
-    outline-style:solid;
+    outline-style: solid;
     box-shadow: 0 0 0 3px #01200a;
 }
+
 #D1 {
     font-size: 15px;
     font-weight: bold;
@@ -139,7 +142,7 @@ button:active {
 #D3 {
     font-size: 15px;
     font-weight: bold;
-     width: 180px;
+    width: 180px;
     background: linear-gradient(rgb(234, 238, 244), #e79379);
     border: solid;
 }
@@ -169,6 +172,3 @@ button:active {
     margin-left: 300px;
 }
 
-.labelText {
-
-}
