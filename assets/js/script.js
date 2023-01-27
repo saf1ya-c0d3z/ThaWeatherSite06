@@ -59,6 +59,15 @@ function getForecastByLatLon(lat, lon) {
         .then(data => {
             console.log(data)
 
+            $("#icon0").attr("src","http://openweathermap.org/img/wn/" + data.list[0].weather[0].icon + ".png")
+            $("#icon1").attr("src","http://openweathermap.org/img/wn/" + data.list[7].weather[0].icon + ".png")
+            $("#icon2").attr("src","http://openweathermap.org/img/wn/" + data.list[15].weather[0].icon + ".png")
+            $("#icon3").attr("src","http://openweathermap.org/img/wn/" + data.list[23].weather[0].icon + ".png")
+            $("#icon4").attr("src","http://openweathermap.org/img/wn/" + data.list[31].weather[0].icon + ".png")
+            $("#icon5").attr("src","http://openweathermap.org/img/wn/" + data.list[39].weather[0].icon + ".png")
+            
+
+
             $("#city-name").text(data.city.name)
             $("#temp").text(data.list[0].main.temp)
             $("#wind").text(data.list[0].wind.speed)
